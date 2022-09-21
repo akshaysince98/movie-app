@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 
 function MoviesTable(props) {
 
@@ -12,7 +12,7 @@ function MoviesTable(props) {
     let sidx = (cPage - 1) * props.moviesCount;
     return (
         <div>
-            {isLoaded == true ? <div>Loading...</div> :
+            {isLoaded === true ? <div>Loading...</div> :
                 <table className="table-fixed w-full" >
                     <thead>
                         <tr>
